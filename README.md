@@ -56,7 +56,7 @@ This report explores which subreddits within which content categories are most p
 * `device_data.csv`: Contains data about user devices.
 * `Subreddit.csv`: Contains information about various subreddits.
 * `users_data.csv`: Data on platform users, including IDs and impression scores.
-* `sql_queries/`: Folder containing all SQL queries used for analysis.
+* `Sql_queries/`: Folder containing all SQL queries used for analysis.
 
 ## Technologies Used
 
@@ -67,7 +67,7 @@ This report explores which subreddits within which content categories are most p
 
 1.  Download all the files from this repository.
 2.  Import the data files into a database system.
-3.  Run the SQL queries provided in the `sql_queries` directory to reproduce the analysis.
+3.  Run the SQL queries provided in the `Sql_queries` directory to reproduce the analysis.
 
 ## Notes
 
