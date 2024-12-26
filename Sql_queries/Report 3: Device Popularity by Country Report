@@ -1,0 +1,14 @@
+SELECT
+    r.country,
+    d.OperatingSystem,
+    COUNT(*) AS DeviceCount,
+    CASE
+        WHEN COUNT(*) <= 0 THEN 'not so popular'
+        WHEN COUNT(*) > 1 THEN 'popular'
+        ELSE 'okay'
+    END AS Popularity
+FROM Device d
+JOIN USER u ON d.UserID = u.UserID
+JOIN Region r ON u.RegionID = r.RegionID
+GROUP BY r.country, d.OperatingSystem
+ORDER BY DeviceCount DESC;
